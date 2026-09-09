@@ -76,20 +76,15 @@ SAMPLE = '''# Press Start, then Step through this one line at a time.
 # The arrow shows where you are; the panel on the right shows
 # every variable and how it changes.
 
-def add_up(numbers):
-    total = 0
-    for number in numbers:
-        total = total + number
-        print("added", number, "so far:", total)
-    return total
-
+sum = 0
 
 scores = [4, 8, 15, 16]
-result = add_up(scores)
-average = result / len(scores)
+for x in range(10):
+    for y in scores:
+       added = x + y
+       sum = sum + added
 
-print("total:", result)
-print("average:", average)
+print("result:", sum)
 '''
 
 
